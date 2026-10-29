@@ -1,0 +1,362 @@
+
+/* =========================
+   1. RESET DAN DASAR
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.7;
+}
+
+a {
+    color: #4f46e5;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3730a3;
+}
+
+/* =========================
+   2. HEADER
+========================= */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 25px 8%;
+    background: linear-gradient(135deg, #312e81, #6366f1);
+    color: white;
+}
+
+header img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 4px solid white;
+    border-radius: 50%;
+    background-color: #e0e7ff;
+}
+
+header h1 {
+    flex: 1;
+    font-size: 28px;
+}
+
+header p {
+    color: #e0e7ff;
+}
+
+/* Menghilangkan garis horizontal di header */
+header hr {
+    display: none;
+}
+
+/* =========================
+   3. NAVBAR
+========================= */
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+header nav {
+    flex-basis: 100%;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+nav a {
+    display: inline-block;
+    padding: 9px 18px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #4f46e5;
+}
+
+/* =========================
+   4. KONTEN UTAMA
+========================= */
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 35px auto;
+    padding: 0 25px;
+}
+
+/* Artikel dan bagian informasi */
+article,
+aside,
+main section {
+    padding: 28px;
+    margin-bottom: 25px;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.05);
+}
+
+article h2,
+aside h2,
+main section h2 {
+    margin-bottom: 14px;
+    color: #312e81;
+}
+
+article h2:not(:first-child) {
+    margin-top: 25px;
+}
+
+article p,
+aside p {
+    margin-bottom: 12px;
+    color: #475569;
+}
+
+article hr {
+    margin-top: 25px;
+    border: 0;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* =========================
+   5. DAFTAR KEAHLIAN
+========================= */
+aside ul {
+    padding-left: 22px;
+    margin-bottom: 20px;
+}
+
+aside li {
+    padding: 5px 0;
+    color: #475569;
+}
+
+aside li::marker {
+    color: #6366f1;
+}
+
+/* =========================
+   6. FORM KONTAK
+========================= */
+main section {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main section form {
+    margin-top: 20px;
+}
+
+form p {
+    margin-bottom: 18px;
+}
+
+form label {
+    display: inline-block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #334155;
+}
+
+input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 9px;
+    background-color: #f8fafc;
+    color: #1e293b;
+    font: inherit;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+    background-color: white;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Tombol formulir */
+button {
+    padding: 12px 22px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4f46e5;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #3730a3;
+    transform: translateY(-2px);
+}
+
+button[type="reset"] {
+    background-color: #64748b;
+}
+
+button[type="reset"]:hover {
+    background-color: #475569;
+}
+
+/* =========================
+   7. FOOTER: FLEXBOX
+========================= */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 25px 8%;
+    background-color: #0f172a;
+    color: #cbd5e1;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+footer a {
+    color: #a5b4fc;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* =========================
+   8. TABLET
+========================= */
+@media (max-width: 768px) {
+    header {
+        justify-content: center;
+        text-align: center;
+        padding: 25px 5%;
+    }
+
+    header h1 {
+        flex-basis: 60%;
+        flex-grow: 0;
+    }
+
+    header nav {
+        justify-content: center;
+    }
+
+    main {
+        margin: 25px auto;
+        padding: 0 18px;
+    }
+
+    article,
+    aside,
+    main section {
+        padding: 22px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* =========================
+   9. MOBILE
+========================= */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+        padding: 25px 5%;
+    }
+
+    header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    header h1 {
+        flex-basis: auto;
+        font-size: 24px;
+    }
+
+    header nav {
+        justify-content: center;
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 8px 11px;
+        font-size: 13px;
+    }
+
+    main {
+        margin: 18px auto;
+        padding: 0 12px;
+    }
+
+    article,
+    aside,
+    main section {
+        padding: 18px;
+        border-radius: 12px;
+    }
+
+    article h2,
+    aside h2,
+    main section h2 {
+        font-size: 21px;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 16px;
+    }
+
+    button {
+        margin-bottom: 8px;
+    }
+
+    footer {
+        padding: 22px 5%;
+    }
+}

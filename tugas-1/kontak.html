@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Mahasiswa</title>
+</head>
+<body>
+
+
+    <header>
+        <h1>Saif Nikmatullah</h1>
+        <p>mahasiswa teknik informatika</p>
+        <hr>
+    <header>
+    
+        <nav>
+    
+            <a href="index.html">Home</a>
+            &nbsp;&nbsp;
+            <a href="kontak.html">Kontak/Saran</a>
+        <hr>
+
+        </nav>
+
+        <main>
+           <section>
+              <h2>Hubungi Saya </h2>
+
+              <from action ="#" method="get">
+
+
+                <p>
+                    <label for="nama">Nama Lengkap:</label><br>
+                    <input
+                       type="text"
+                       id="nama" 
+                       name="nama"
+                       placeholder="Masukkan Nama Lengkap"
+                       minlength="3"
+                       maxlength="50"
+                       required>
+
+                </p>
+
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input
+                       type="email"
+                       id="email" 
+                       name="email"
+                       placeholder="contoh@email.com"
+                       required>
+                </p>
+
+                <p>
+                    <label for="telepon">Nomor Telepon:</label><br>
+                    <input
+                       type="tel"
+                       id="telepon"
+                       name="telepon"
+                       placeholder="08xxxxxxxxxx"
+                       pattern="[0-9]{10,12}"
+                       title="Masukkan nomor telepon yang valid (10-12 digit)"
+                       required>
+                </p>
+
+                <p>
+                    <label for="tanggal">Tanggal Mengirim Pesan:</label><br>
+                    <input
+                       type="date"
+                       id="tanggal"
+                       name="tanggal"
+                       min="2026-19-10"
+                       required>
+                </p>
+
+                <p>
+                    <label for="kategori">Kategori Pesan:</label><br>
+                    <select id="kategori" name="kategori" required>
+                        <option value="">Pilih Kategori</option>
+                        <option value="pertanyaan">Pertanyaan</option>
+                        <option value="saran">Saran</option>
+                        <option value="keluhan">Keluhan</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="kepuasan">Tingkat Kepuasan (1-5):</label><br>
+                    <input
+                       type="number"
+                       id="kepuasan"
+                       name="kepuasan"
+                       min="1"
+                       max="5"
+                       required>
+                </p>
+
+                <p>
+                    <label for="pesan">Pesan atau saran:</label><br>
+                    <textarea
+                       id="pesan"
+                       name="pesan"
+                       placeholder="Tulis pesan Anda di sini..."
+                       rows="5"
+                       required></textarea>
+                </p>
+
+                <p>
+                    <button type="submit" value="Kirim Pesan"></button>
+                    <button type="reset" value="Reset Form"></button>
+                </p>
+
+
+            </form>
+
+        </section>
+    <main>
+
+    <aside>
+        <h2>Informasi</h2>
+        <p>silahkan isi formulir dengan data yang benar:</p>
+        <p>Kolom bertanda wajib harus diisi sebelum formulir dikirim</p>
+        </aside>    
+
+        <footer>
+        <p>&copy; 2026 Saif Nikmatullah. Hak cipta dilindungi.</p>
+        <p><a href="index.html">Kembali ke Halaman Utama</a></p>
+        </footer>
+
+</body>     
+</html>
+

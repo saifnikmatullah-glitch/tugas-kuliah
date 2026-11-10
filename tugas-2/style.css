@@ -43,12 +43,13 @@ header {
 }
 
 header img {
-    width: 120px;
-    height: 120px;
+    display: block;
+    width: 160px;
+    height: 160px;
     object-fit: cover;
-    border: 4px solid white;
     border-radius: 50%;
-    background-color: #e0e7ff;
+    border: 4px solid white;
+    margin: 0 auto 15px;
 }
 
 header h1 {
